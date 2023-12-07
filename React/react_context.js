@@ -2,11 +2,13 @@ import React, { useContext } from "react";
 import ReactDOM from "react-dom";
 
 import "./styles.scss";
-import CardContainer from "./components/card-components/CardContainer";
+
+//cria o contexto
 const Mycontext = React.createContext();
 
 
 function ChildComponent(){
+//efetivamente usa o contexto
 const value = useContext(Mycontext);
 return (
     <div>
@@ -19,6 +21,7 @@ return (
 
 function App() {
 
+  //contexto a ser passado
   const useContext = {
     title:"meu contexto",
     showContext: function() {return this.title},

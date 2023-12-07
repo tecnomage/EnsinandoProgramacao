@@ -1,3 +1,10 @@
+
+/**
+ * Handles the search for a specific box in an array recursively.
+ * @param {number[]} arr - The array of boxes.
+ * @param {number} i - The index of the current box being checked.
+ * @returns {number|undefined} - The value of the box if found, otherwise undefined.
+ */
 function boxHandle(arr, i) {
   if (arr[i] == 18) {
     console.log(`caixa ${i} encontrada`);
@@ -9,6 +16,12 @@ function boxHandle(arr, i) {
   }
 }
 
+/**
+ * Handles the search for a specific box in an array using a while loop.
+ * @param {number[]} arr - The array of boxes.
+ * @param {number} i - The index of the current box being checked.
+ * @returns {number|undefined} - The value of the box if found, otherwise undefined.
+ */
 function boxHandleWhile(arr, i) {
   while (i < arr.length) {
     if (arr[i] == 18) {
